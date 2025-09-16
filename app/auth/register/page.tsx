@@ -42,11 +42,16 @@ export default function RegisterPage() {
     }
 
     try {
+      const redirectUrl =
+        process.env.NODE_ENV === "production"
+          ? `${window.location.origin}/auth/callback`
+          : process.env.NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL || `${window.location.origin}/auth/callback`
+
       const { error } = await supabase.auth.signUp({
         email,
         password,
         options: {
-          emailRedirectTo: process.env.NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL || `${window.location.origin}/`,
+          emailRedirectTo: redirectUrl,
           data: {
             first_name: firstName,
             last_name: lastName,

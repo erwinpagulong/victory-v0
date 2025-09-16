@@ -121,7 +121,7 @@ export default function LoginPage() {
 
               <Button
                 type="submit"
-                className="w-full h-12 bg-victory-purple hover:bg-victory-purple-dark text-white font-semibold rounded-xl transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full h-12 bg-primary hover:bg-secondary text-primary-foreground font-semibold rounded-xl transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={isLoading}
               >
                 {isLoading ? (
@@ -136,10 +136,7 @@ export default function LoginPage() {
             </form>
 
             <div className="mt-4 text-center">
-              <Link
-                href="/auth/forgot-password"
-                className="text-sm text-victory-purple hover:text-victory-purple-dark font-medium"
-              >
+              <Link href="/auth/forgot-password" className="text-sm text-primary hover:text-secondary font-medium">
                 Forgot your password?
               </Link>
             </div>
@@ -147,10 +144,7 @@ export default function LoginPage() {
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
                 Don't have an account?{" "}
-                <Link
-                  href="/auth/register"
-                  className="font-semibold text-victory-purple hover:text-victory-purple-dark"
-                >
+                <Link href="/auth/register" className="font-semibold text-primary hover:text-secondary">
                   Sign up
                 </Link>
               </p>

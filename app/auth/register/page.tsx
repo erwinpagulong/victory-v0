@@ -64,7 +64,7 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-victory-purple-light to-victory-purple-dark flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-purple-200 to-purple-600 flex flex-col">
       {/* Header */}
       <div className="flex items-center justify-between p-4 bg-white/10 backdrop-blur-sm">
         <button onClick={() => router.back()} className="p-2 rounded-full bg-white/20 backdrop-blur-sm">
@@ -98,7 +98,7 @@ export default function RegisterPage() {
                       required
                       value={firstName}
                       onChange={(e) => setFirstName(e.target.value)}
-                      className="h-12 pl-10 border-gray-200 focus:border-victory-purple focus:ring-victory-purple"
+                      className="h-12 pl-10 border-gray-200 focus:border-primary focus:ring-primary"
                     />
                   </div>
                 </div>
@@ -116,7 +116,7 @@ export default function RegisterPage() {
                       required
                       value={lastName}
                       onChange={(e) => setLastName(e.target.value)}
-                      className="h-12 pl-10 border-gray-200 focus:border-victory-purple focus:ring-victory-purple"
+                      className="h-12 pl-10 border-gray-200 focus:border-primary focus:ring-primary"
                     />
                   </div>
                 </div>
@@ -135,7 +135,7 @@ export default function RegisterPage() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="h-12 pl-10 border-gray-200 focus:border-victory-purple focus:ring-victory-purple"
+                    className="h-12 pl-10 border-gray-200 focus:border-primary focus:ring-primary"
                   />
                 </div>
               </div>
@@ -153,7 +153,7 @@ export default function RegisterPage() {
                     required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="h-12 pl-10 pr-12 border-gray-200 focus:border-victory-purple focus:ring-victory-purple"
+                    className="h-12 pl-10 pr-12 border-gray-200 focus:border-primary focus:ring-primary"
                   />
                   <button
                     type="button"
@@ -178,7 +178,7 @@ export default function RegisterPage() {
                     required
                     value={confirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
-                    className="h-12 pl-10 pr-12 border-gray-200 focus:border-victory-purple focus:ring-victory-purple"
+                    className="h-12 pl-10 pr-12 border-gray-200 focus:border-primary focus:ring-primary"
                   />
                   <button
                     type="button"
@@ -198,7 +198,7 @@ export default function RegisterPage() {
 
               <Button
                 type="submit"
-                className="w-full h-12 bg-victory-purple hover:bg-victory-purple-dark text-white font-semibold rounded-xl transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full h-12 bg-primary hover:bg-secondary text-primary-foreground font-semibold rounded-xl transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={isLoading}
               >
                 {isLoading ? (
@@ -215,7 +215,7 @@ export default function RegisterPage() {
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
                 Already have an account?{" "}
-                <Link href="/auth/login" className="font-semibold text-victory-purple hover:text-victory-purple-dark">
+                <Link href="/auth/login" className="font-semibold text-primary hover:text-secondary">
                   Sign in
                 </Link>
               </p>

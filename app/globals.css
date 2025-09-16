@@ -38,6 +38,11 @@
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #e6e6e6;
   --sidebar-ring: #491b6d;
+
+  /* Added Victory Cubao specific color variables */
+  --victory-purple: #491b6d;
+  --victory-purple-dark: #3d1659;
+  --victory-purple-light: #c983de;
 }
 
 .dark {
@@ -73,6 +78,11 @@
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #4b4b4b;
   --sidebar-ring: #c983de;
+
+  /* Added Victory Cubao specific color variables for dark mode */
+  --victory-purple: #c983de;
+  --victory-purple-dark: #66328e;
+  --victory-purple-light: #e4b3f0;
 }
 
 @theme inline {
@@ -114,6 +124,11 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Added Victory Cubao color mappings for Tailwind */
+  --color-victory-purple: var(--victory-purple);
+  --color-victory-purple-dark: var(--victory-purple-dark);
+  --color-victory-purple-light: var(--victory-purple-light);
 }
 
 @layer base {
